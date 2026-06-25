@@ -1,0 +1,17 @@
+# Core codec + entropy coding
+torch>=2.4
+torchvision>=0.19
+numpy>=1.24
+constriction>=0.4          # hyperprior arithmetic coding
+Pillow>=11.3               # native AVIF/WebP support (used by the codec guide path)
+
+# Perceptual metric (guide selection + best-of-N)
+piq>=0.8
+
+# Default decoder: Gemini 3 Pro Image
+google-genai>=0.3
+
+# Optional --generator sdxl backend (open/offline). Omit if you only use Gemini.
+diffusers>=0.30
+transformers>=4.40
+peft>=0.11
